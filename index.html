@@ -1,0 +1,936 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<title>SANTOSH JOSHI PORTFOLIO</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+	<link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900" rel="stylesheet">
+
+	<link rel="stylesheet" href="css/open-iconic-bootstrap.min.css">
+	<link rel="stylesheet" href="css/animate.css">
+
+	<link rel="stylesheet" href="css/owl.carousel.min.css">
+	<link rel="stylesheet" href="css/owl.theme.default.min.css">
+	<link rel="stylesheet" href="css/magnific-popup.css">
+
+	<link rel="stylesheet" href="css/aos.css">
+
+	<link rel="stylesheet" href="css/ionicons.min.css">
+
+	<link rel="stylesheet" href="css/flaticon.css">
+	<link rel="stylesheet" href="css/icomoon.css">
+	<link rel="stylesheet" href="css/style.css">
+
+
+
+	<style>
+		/*======================================
+//--//-->   ABOUT
+======================================*/
+
+		.about-mf .box-shadow-full {
+			padding-top: 4rem;
+			padding-bottom: 4rem;
+		}
+
+		.about-mf .about-img {
+			margin-bottom: 2rem;
+		}
+
+		.about-mf .about-img img {
+			margin-left: 10px;
+		}
+
+
+		.skill-mf .progress {
+			/* background-color: #cde1f8; */
+			margin: .5rem 0 1.2rem 0;
+			border-radius: 0;
+			height: .7rem;
+		}
+
+		.skill-mf .progress .progress-bar {
+			height: .7rem;
+			background-color: #ffbd39;
+		}
+
+
+		/* Animation styles */
+		#typing-animation {
+			position: relative;
+			font-size: 30px;
+			font-weight: bold;
+			color: rgb(255, 255, 255);
+			overflow: hidden;
+			white-space: nowrap;
+			animation: typing 3s steps(20, end) infinite;
+		}
+
+		#typing-animation:before {
+			content: "";
+			/* position: absolute; */
+			top: 0;
+			left: 0;
+			width: 0;
+			height: 100%;
+			background-color: #ccc;
+			animation: typing-cursor 0.5s ease-in-out infinite;
+		}
+
+		@keyframes typing {
+			from {
+				width: 0;
+			}
+
+			to {
+				width: 100%;
+			}
+		}
+
+		@keyframes typing-cursor {
+			from {
+				width: 5px;
+			}
+
+			to {
+				width: 0;
+			}
+		}
+
+
+		/* project image zoom effect */
+
+		.zoom-effect {
+			overflow: hidden;
+			transition: transform 0.3s ease-out;
+		}
+
+		.zoom-effect:hover {
+			transform: scale(1.1);
+		}
+	</style>
+
+
+</head>
+
+<body data-spy="scroll" data-target=".site-navbar-target" data-offset="300">
+
+
+	<nav class="navbar navbar-expand-lg navbar-dark ftco_navbar ftco-navbar-light site-navbar-target" id="ftco-navbar">
+		<div class="container">
+			<a class="navbar-brand" href="index.html">Dr Santosh Joshi</a>
+			<button class="navbar-toggler js-fh5co-nav-toggle fh5co-nav-toggle" type="button" data-toggle="collapse"
+				data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="oi oi-menu"></span> Menu
+			</button>
+
+			<div class="collapse navbar-collapse" id="ftco-nav">
+				<ul class="navbar-nav nav ml-auto">
+					<li class="nav-item"><a href="#home-section" class="nav-link"><span>Home</span></a></li>
+					<li class="nav-item"><a href="#about-section" class="nav-link"><span>About</span></a></li>
+					<li class="nav-item"><a href="#resume-section" class="nav-link"><span>CV</span></a></li>
+					<li class="nav-item"><a href="#project-section" class="nav-link"><span>Publications</span></a></li>
+					<li class="nav-item"><a href="#contact-section" class="nav-link"><span>Contact</span></a></li>
+				</ul>
+			</div>
+		</div>
+	</nav>
+	<section id="home-section" class="hero">
+		<div class="home-slider  owl-carousel">
+			<div class="slider-item ">
+				<div class="overlay"></div>
+				<div class="container">
+					<div class="row d-md-flex no-gutters slider-text align-items-end justify-content-end"
+						data-scrollax-parent="true">
+						<div class="one-third js-fullheight order-md-last img"
+							style="background-image:url(images/bg_1.png);">
+							<div class="overlay"></div>
+						</div>
+						<div class="one-forth d-flex  align-items-center ftco-animate"
+							data-scrollax=" properties: { translateY: '70%' }">
+							<div class="text">
+								<span class="subheading">Hello!</span>
+								<h1 class="mb-4 mt-3">I'm <span>Dr. Santosh Joshi</span></h1>
+
+								<!-- Element to contain animated typing -->
+								<span id="typing-animation"></span>
+
+								<script>
+
+									// Initialize the typing animation
+									const typingAnimationElement = document.getElementById('typing-animation');
+
+									// Create an array of typing text
+									const typingTexts = [
+										'Scientist  ',
+
+										'Teacher   ',
+									];
+
+									// Create a function to display the typing animation for a given text
+									function playTypingAnimation(text) {
+										// Loop through each character and add it to the element
+										for (let i = 0; i < text.length; i++) {
+											setTimeout(() => {
+												typingAnimationElement.textContent += text[i];
+											}, i * 200); // Increase the delay to slow down the typing animation
+										}
+
+										// Once the animation is complete, reset the text and start over
+										setTimeout(() => {
+											typingAnimationElement.textContent = '';
+											playTypingAnimation(typingTexts[(typingTexts.indexOf(text) + 1) % typingTexts.length]);
+										}, text.length * 200);
+									}
+
+									// Start the typing animation loop
+									playTypingAnimation(typingTexts[0]);
+
+								</script>
+
+								<br>
+								<br>
+								<h2>Scientist ‘F’
+
+									ARIES, Nainital, India</h2>
+								<!-- <h2 class="d-flex" style="margin-bottom: 0">With over 5 years of experience</h2> -->
+								<!-- <br> -->
+
+								<a href="https://scholar.google.ru/citations?user=-mFAISoAAAAJ&hl=en"
+									class="btn btn-white btn-outline-white py-3 px-4">My works</a></p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+
+
+	<section class="ftco-about img ftco-section ftco-no-pb" id="about-section">
+		<div class="container">
+			<div class="row">
+				<div class="row d-flex align-items-stretch">
+					<!-- <div class="row d-flex"> -->
+					<div class="col-md-6 col-lg-5 d-flex">
+						<div class="img-about img d-flex align-items-stretch">
+							<div class="overlay">
+								<div class="row">
+									<div class="col-sm-6 col-md-5">
+										<div class="about-img">
+											<img src="images/about-me.jpg" class="img-fluid rounded b-shadow-a" alt="">
+										</div>
+									</div>
+									<!-- Details next to profile image -->
+									<div class="col-sm-6 col-md-7">
+										<div class="about-info">
+											<p><span class="title-s">Name: </span> <span>Dr Santosh Joshi</span></p>
+											<p><span class="title-s">Job Role: </span> <span>Scientist ‘F’ ARIES,
+													Nainital, India</span></p>
+											<p><span class="title-s">Experience: </span> <span>25 Years+</span></p>
+											<p><span class="title-s">Address: </span> <span>Nainital, India</span></p>
+										</div>
+									</div>
+								</div>
+
+								<div class="skill-mf">
+									<p class="title-s">Skills</p>
+									<span>Proficiency in programming languages such as Python, Fortran, and IDL</span>
+									<span class="pull-right"></span>
+									<div class="progress">
+										<div class="progress-bar" role="progressbar" style="width: 95%;"
+											aria-valuenow="95" aria-valuemin="0" aria-valuemax="100"></div>
+									</div>
+
+									<span>Data reduction and analysis using various software packages</span> <span
+										class="pull-right"></span>
+									<div class="progress">
+										<div class="progress-bar" role="progressbar" style="width: 90%"
+											aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
+									</div>
+
+									<span>Experience with astronomical software and tools like IRAF, MIDAS, and
+										FTOOLS</span> <span class="pull-right"></span>
+									<div class="progress">
+										<div class="progress-bar" role="progressbar" style="width: 95%"
+											aria-valuenow="95" aria-valuemin="0" aria-valuemax="100"></div>
+									</div>
+
+									<span>Project management and organization of scientific workshops and
+										conference</span> <span class="pull-right"></span>
+									<div class="progress">
+										<div class="progress-bar" role="progressbar" style="width: 90%"
+											aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
+									</div>
+
+									<span>Effective communication of complex scientific ideas through publications and
+										presentations</span> <span class="pull-right"></span>
+									<div class="progress">
+										<div class="progress-bar" role="progressbar" style="width: 95%"
+											aria-valuenow="95" aria-valuemin="0" aria-valuemax="100"></div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="col-md-6 col-lg-7 pl-lg-5 pb-5">
+						<div class="row justify-content-start pb-3">
+							<div class="col-md-12 heading-section ftco-animate">
+
+								<h1 class="big">About</h1>
+								<h2 class="mb-4">About Me</h2>
+
+								<p>I am Santosh Joshi, a dedicated Scientist currently serving at the Aryabhatta
+									Research Institute of Observational Sciences (ARIES) in Nainital, India. With a
+									career spanning over two decades, I have contributed significantly to the field of
+									astrophysics, focusing on the photometric variability in chemically peculiar stars,
+									high-resolution spectroscopy, and spectro-polarimetry of pulsating Am stars.</p>
+								<ul class="about-info mt-4 px-md-0 px-2">
+									<li class="d-flex"><span>Profile:</span> <span>Scientist with a profound expertise
+											in astrophysics, currently holding the position of Scientist ‘F’ at
+											ARIES</span></li>
+									<li class="d-flex"><span>Domain:</span> <span>Astrophysics,
+											Photometric Variability,
+											High-Resolution Spectroscopy,
+											Spectro-Polarimetry</span></li>
+									<li class="d-flex"><span>Education:</span> <span>Ph.D. in Astronomy from Aryabhatta
+											Research Institute of Observational Sciences (ARIES), Nainital, India<br>
+											Ph.D. Supervisor: Prof. Ram Sagar<br>
+											Ph.D. Co-supervisor: Prof. Peter Martinez, South African Astronomical
+											Observatory, South Africa<br>
+											Post-Doctoral Fellowship at Inter-University Centre for Astronomy and
+											Astrophysics (IUCAA), Pune, India</span></li>
+									<li class="d-flex"><span>Language:</span> <span>English, Hindi</span></li>
+									<li class="d-flex"><span>Teaching and Supervision:</span> <span>Taught pre-PhD
+											courses at ARIES<br>
+											Supervised several PhD and project students<br>
+											Served as an external examiner for PhD theses globally<br>
+										</span></li>
+
+
+								</ul>
+							</div>
+						</div>
+
+
+						<div class="counter-wrap ftco-animate d-flex mt-md-3">
+							<div class="text">
+								<p class="mb-4">
+									<span class="number" data-number="23">0</span> <span>+</span>
+									<span>&nbsp; Projects completed</span>
+								</p>
+								<p><a href="https://scholar.google.ru/citations?user=-mFAISoAAAAJ&hl=en"
+										class="btn btn-primary py-3 px-3">Scholar</a></p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+
+
+
+	<section class="ftco-section ftco-no-pb" id="resume-section">
+		<div class="container">
+			<div class="row justify-content-center pb-5">
+				<div class="col-md-10 heading-section text-center ftco-animate">
+					<h1 class="big big-2">CV</h1>
+					<h2 class="mb-4">CV</h2>
+					<p>I am Santosh Joshi, a seasoned Scientist with a profound expertise in astrophysics, currently
+						holding the position of Scientist ‘F’ at the Aryabhatta Research Institute of Observational
+						Sciences (ARIES) in Nainital, India.</p>
+				</div>
+			</div>
+
+			<div class="row">
+				<h1 class="big-4">Experience</h1>
+				<div class="underline"></div>
+			</div>
+			<br>
+
+			<div class="row">
+				<div class="col-md-6">
+					<div class="resume-wrap ftco-animate">
+						<span class="date">July 2023-Present</span>
+						<h2>Scientist ‘F’</h2>
+						<span class="position">Aryabhatta Research Institute of Observational Sciences (ARIES),
+							Nainital, India</span>
+						<p class="mt-4">The Aryabhatta Research Institute of Observational Sciences (ARIES), located in
+							Nainital, India, is one of the leading research institutes in the field of observational
+							astronomy and astrophysics.
+						<ul>
+							<li>1.Photometric Variability Studies:
+
+								Investigated the photometric variability in chemically peculiar stars.<br>
+								Conducted high-resolution spectroscopy and spectro-polarimetry of pulsating Am
+								stars.<br>
+								Worked on the census of variable stars in open and intermediate-age star clusters.</li>
+							<li>2.Instrumentation Development:
+
+								Contributed to the development and enhancement of astronomical instruments.<br>
+								Implemented advanced techniques for time-series analysis and photometric data reduction.
+							</li>
+
+						</ul>
+						</p>
+					</div>
+
+				</div>
+
+				<div class="col-md-6">
+					<div class="resume-wrap ftco-animate">
+						<span class="date">2021-Present</span>
+						<h2>Supervision to Project Students</h2>
+						<span class="position">ARIES</span>
+						<p class="mt-4">Dishani Mallick
+						<ul>
+							<li>Institution: IIT, Dhanbad<BR>
+								Project Title: "Identification and Classification of Variable Stars Using Machine
+								Learning"<BR>
+								Duration: 24 May - 24 July 2023
+							</li>
+
+						</ul>
+						</p>
+						<p class="mt-4">Mr. Ganesh Pawar
+						<ul>
+							<li>Institution: Department of Physics, Mumbai University<br>
+								Project Title: "Low-Resolution Spectroscopy of Be Stars"<br>
+								Duration: 01 February - 30 June 2022 (online)<br>
+								Current Position: PhD from Copernicus Astronomical Center of Polish Academy of Sciences,
+								Poland</li>
+
+						</ul>
+						</p>
+					</div>
+
+				</div>
+			</div>
+
+			<br>
+			<br>
+
+			<div class="row">
+				<h1 class="big-4">Education</h1>
+				<div class="underline"></div>
+			</div>
+			<br>
+
+			<div class="row">
+				<div class="col-md-6">
+					<div class="resume-wrap ftco-animate">
+						<span class="date">July 1997 - July 2000</span>
+						<h2>Ph.D. in Physics (Astronomy)</h2>
+						<span class="position">Aryabhatta Research Institute of Observational Sciences (ARIES),
+							Nainital, India</span>
+						<p class="mt-4">Supervisor: Prof. Ram Sagar</p>
+					</div>
+				</div>
+
+				<div class="col-md-6">
+					<div class="resume-wrap ftco-animate">
+						<span class="date">1994 - 1996</span>
+						<h2>Master of Science (M.Sc.) in Physics</h2>
+						<span class="position">Kumaun University, Nainital, India</span>
+						<p class="mt-4">Focus: Physics with a specialization in Astronomy</p>
+					</div>
+				</div>
+			</div>
+
+			<div class="row justify-content-center mt-5">
+				<div class="col-md-6 text-center ftco-animate">
+					<p><a href="https://doc-04-4o-apps-viewer.googleusercontent.com/viewer/secure/pdf/mt6n9pabarc12e91m1bhn3firmvvhubi/m7vc0v35fdont7o1r21ob06o1pe2b840/1722533475000/gmail/15555444626989777028/ACFrOgBVXKrld6kPYQJeUQQOrBjSEJ7U-6JQ9QybbOwPf4rMt-dxiu2hf-2ErDeeoddt8yCwG4VF4dG3T1ga-NDzNBU0CcPWL4uquhhUdZliirijwpktWU7wX2JAOo7VLmgH_RhamKhtYa8zxtI9?print=true&nonce=0c2kefuch8ghg&user=15555444626989777028&hash=vaginb5n6e2ttbi8v12l3jraeemlqdsr"
+							class="btn btn-primary py-4 px-5">Download CV</a></p>
+				</div>
+			</div>
+		</div>
+	</section>
+
+
+
+	<section class="ftco-section" id="project-section">
+		<div class="container">
+			<div class="row justify-content-center mb-5 pb-5">
+				<div class="col-md-7 heading-section text-center ftco-animate">
+					<h1 class="big big-2">Publications</h1>
+					<h2 class="mb-4">Publications</h2>
+					<p>Below are some of my publications with associated links.</p>
+				</div>
+			</div>
+			<div class="row d-flex">
+				<div class="col-md-4 d-flex ftco-animate">
+					<div class="blog-entry justify-content-end">
+						<a href="https://ui.adsabs.harvard.edu/abs/2024BSRSL..93....1J/abstract"
+							class="block-20 zoom-effect" style="background-image: url('images/proj1.jpg');">
+						</a>
+						<div class="text mt-3 float-right d-block">
+
+							<h3 class="heading"><a
+									href="https://ui.adsabs.harvard.edu/abs/2024BSRSL..93....1J/abstract">Proceedings of
+									the 3rd BINA Workshop: Scientific Potential of Indo-Belgian Co-operation</a></h3>
+							<p>In this report, we present an overview of the 3rd BINA workshop hosted by ARIES, Nainital
+								on a broad theme the Scientific potential of the Indo-Belgian co-operation. Further, an
+								introduction of the proceedings of the 3rd BINA workshop is also delineated along with
+								possible areas where there is potential to extend Indo-Belgian cooperation in the
+								current era
+								of multi-wavelength astronomy. </p>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-4 d-flex ftco-animate">
+					<div class="blog-entry justify-content-end">
+						<a href="https://academic.oup.com/mnras/article/529/1/556/7604620" class="block-20 zoom-effect"
+							style="background-image: url('images/proj2.jpg');">
+						</a>
+						<div class="text mt-3 float-right d-block">
+
+							<h3 class="heading"><a href="https://academic.oup.com/mnras/article/529/1/556/7604620">HD
+									12098: A highly distorted dipole mode in an obliquely pulsating roAp star </a></h3>
+							<p>HD 12098 is a rapidly oscillating Ap star pulsating in the most distorted dipole mode yet
+								observed in this class of star. Using Transiting Exoplanet Survey Satellite (TESS)
+								Sector 58 observations, we show that there are photometric spots at both the magnetic
+								poles of this star. </p>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-4 d-flex ftco-animate">
+					<div class="blog-entry">
+						<a href="https://www.cambridge.org/core/journals/publications-of-the-astronomical-society-of-australia/article/abs/mode-identification-and-period-fitting-in-six-pulsating-hot-subdwarfs/E177B37E6E26E11667D8AB1527BE0215"
+							class="block-20 zoom-effect" style="background-image: url('images/proj3.jpg');">
+						</a>
+						<div class="text mt-3 float-right d-block">
+
+							<h3 class="heading"><a
+									href="https://www.cambridge.org/core/journals/publications-of-the-astronomical-society-of-australia/article/abs/mode-identification-and-period-fitting-in-six-pulsating-hot-subdwarfs/E177B37E6E26E11667D8AB1527BE0215">Seismic
+									modeling of six pulsating hot subdwarfs observed by TESS and Galactic population
+									study of hot subdwarf pulsators</a></h3>
+							<p>We report the results of our analysis of six gravity-mode pulsating hot subdwarf stars
+								observed in the short cadence mode by Transiting Exoplanet Survey Satellite. We detected
+								at least 10 pulsation periods in each star, searched for multiplets, and used an
+								asymptotic period spacing to identify modes.</p>
+						</div>
+					</div>
+				</div>
+			</div>
+			<br>
+			<!-- added justify-content-center to center align the last two projects -->
+			<div class="row d-flex justify-content-center">
+				<div class="col-md-4 d-flex ftco-animate">
+					<div class="blog-entry justify-content-end">
+						<a href="https://www.aanda.org/articles/aa/abs/2009/45/aa12382-09/aa12382-09.html"
+							class="block-20 zoom-effect" style="background-image: url('images/proj4.jpg');">
+						</a>
+						<div class="text mt-3 float-right d-block">
+
+							<h3 class="heading"><a
+									href="https://www.aanda.org/articles/aa/abs/2009/45/aa12382-09/aa12382-09.html">Asteroseismology
+									of the mild Am Delta Sct star HD118660</a></h3>
+							<p>The Nainital-Cape survey is a dedicated research programme to search for and study the
+								pulsational variability in chemically peculiar stars in the Northern Hemisphere.</p>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-4 d-flex ftco-animate">
+					<div class="blog-entry justify-content-end">
+						<a href="https://academic.oup.com/mnras/article/527/3/7414/7445001" class="block-20 zoom-effect"
+							style="background-image: url('images/proj5.jpg');">
+						</a>
+						<div class="text mt-3 float-right d-block">
+
+							<h3 class="heading"><a href="https://academic.oup.com/mnras/article/527/3/7414/7445001">On
+									the stability and pulsation in models of B[e] star MWC 137</a></h3>
+							<p>B [e] type stars are characterized by strong emission lines, photometric, and
+								spectroscopic variabilities and unsteady mass-loss rates. MWC 137 is a galactic B [e]
+								type
+								star situated in the constellation Orion.</p>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-4 d-flex ftco-animate">
+					<div class="blog-entry justify-content-end">
+						<a href="https://academic.oup.com/mnras/article/520/1/1092/6973220" class="block-20 zoom-effect"
+							style="background-image: url('images/proj6.png');">
+						</a>
+						<div class="text mt-3 float-right d-block">
+
+							<h3 class="heading"><a href="https://academic.oup.com/mnras/article/520/1/1092/6973220">VI
+									CCD photometric detection of variable stars in the young open cluster NGC 6823 </a>
+							</h3>
+							<p>We present stellar variability towards the young open cluster NGC 6823. Time series V-
+								and I-band CCD photometry led to identification and characterization of 88 variable
+								stars, of which only 14 have been previously recognized.</p>
+						</div>
+					</div>
+				</div>
+				<div class="row d-flex">
+					<div class="col-md-4 d-flex ftco-animate">
+						<div class="blog-entry justify-content-end">
+							<a href="https://academic.oup.com/mnras/article/510/4/5854/6515728"
+								class="block-20 zoom-effect" style="background-image: url('images/proj7.jpeg');">
+							</a>
+							<div class="text mt-3 float-right d-block">
+
+								<h3 class="heading"><a
+										href="https://academic.oup.com/mnras/article/510/4/5854/6515728">Study of
+										Chemically Peculiar Stars-I: High-resolution Spectroscopy and K2 Photometry of
+										Am Stars
+										in the Region of M44</a></h3>
+								<p>We present a study based on the high-resolution spectroscopy and K2 space photometry
+									of
+									five chemically peculiar stars in the region of the open cluster M44. The analysis
+									of the high-
+									precision photometric K2 data reveals that the light variations in HD 73045 and HD
+									76310
+									are rotational in nature and caused by spots or cloud-like co-rotating structures,
+									which are
+									non-stationary and short-lived.
+								</p>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-4 d-flex ftco-animate">
+						<div class="blog-entry justify-content-end">
+							<a href="https://academic.oup.com/mnras/article/504/4/5528/6247612"
+								class="block-20 zoom-effect" style="background-image: url('images/proj8.png');">
+							</a>
+							<div class="text mt-3 float-right d-block">
+
+								<h3 class="heading"><a
+										href="https://academic.oup.com/mnras/article/504/4/5528/6247612">HERMES
+										spectroscopy of normal A and Am stars; </a></h3>
+								<p>The nominal Kepler mission provided very high precision photometric data. Using these
+									data, interesting phenomena such as spots, and 'hump and spike'features were
+									observed in
+									the light curves of some normal A and metallic lined A stars (Am stars). However,
+									the
+									connection between such phenomena and the chemical peculiarity of the Am stars is
+									still
+									unclear.</p>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-4 d-flex ftco-animate">
+						<div class="blog-entry justify-content-end">
+							<a href="https://academic.oup.com/mnras/article/504/4/5528/6247612"
+								class="block-20 zoom-effect" style="background-image: url('images/proj9.jpg');">
+							</a>
+							<div class="text mt-3 float-right d-block">
+
+								<h3 class="heading"><a
+										href="https://academic.oup.com/mnras/article/504/4/5528/6247612">LAMOST
+										J045019.27+394758.7, with peculiar abundances of N, Na, V, Zn, is possibly a
+										Sculptor dwarf galaxy escapee </a></h3>
+								<p>The nominal Kepler mission provided very high precision photometric data. Using these
+									data, interesting phenomena such as spots, and 'hump and spike'features were
+									observed in
+									the light curves of some normal A and metallic lined A stars (Am stars). However,
+									the
+									connection between such phenomena and the chemical peculiarity of the Am stars is
+									still
+									unclear. </p>
+							</div>
+						</div>
+					</div>
+					<div class="row d-flex">
+						<div class="col-md-4 d-flex ftco-animate">
+							<div class="blog-entry justify-content-end">
+								<a href="https://academic.oup.com/mnras/article/502/1/541/6043227"
+									class="block-20 zoom-effect" style="background-image: url('images/proj10.jpg');">
+								</a>
+								<div class="text mt-3 float-right d-block">
+
+									<h3 class="heading"><a
+											href="https://academic.oup.com/mnras/article/502/1/541/6043227">Asteroseismology
+											of SZ Lyn using multiband high time resolution photometry from ground and
+											space</a></h3>
+									<p>The nominal Kepler mission provided very high precision photometric data. Using
+										these
+										data, interesting phenomena such as spots, and 'hump and spike'features were
+										observed in
+										the light curves of some normal A and metallic lined A stars (Am stars).
+										However, the
+										connection between such phenomena and the chemical peculiarity of the Am stars
+										is still
+										unclear.
+									</p>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-4 d-flex ftco-animate">
+							<div class="blog-entry justify-content-end">
+								<a href="https://academic.oup.com/mnras/article/500/4/5515/5998235"
+									class="block-20 zoom-effect" style="background-image: url('images/proj11.jpg');">
+								</a>
+								<div class="text mt-3 float-right d-block">
+
+									<h3 class="heading"><a
+											href="https://academic.oup.com/mnras/article/500/4/5515/5998235">Instabilities
+											and pulsations in models of the B-type supergiant κ Cassiopeiae (HD 2905)
+										</a></h3>
+									<p>or the B-type supergiant κ Cassiopeiae (HD 2905), variabilities with periods
+										between several hours and a few days have been observed both photometrically and
+										spectroscopically. A recent study of this star by Simón-Díaz et al. has revealed
+										variability with a dominant period of 2.7 d. To understand this variability, we
+										present a linear non-adiabatic stability analysis with respect to radial
+										perturbations for models of κ Cassiopeiae. Instabilities associated with the
+										fundamental mode and the first overtone are identified for models with masses
+										between 27 and 44 M⊙.</p>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-4 d-flex ftco-animate">
+							<div class="blog-entry justify-content-end">
+								<a href="https://academic.oup.com/mnras/article/500/4/5106/5989729"
+									class="block-20 zoom-effect" style="background-image: url('images/proj12.jpg');">
+								</a>
+								<div class="text mt-3 float-right d-block">
+
+									<h3 class="heading"><a
+											href="https://academic.oup.com/mnras/article/500/4/5106/5989729">Fast
+											photometric variability of very low mass stars in IC 348: detection of
+											superflare in an M
+											dwarf</a></h3>
+									<p>We present here optical I-band photometric variability study down to ≃19 mag of a
+										young (∼2–3 Myr) star-forming region IC 348 in the Perseus molecular cloud. We
+										aim to explore the fast rotation (in the time-scales of hours) in very low-mass
+										stars including brown dwarfs (BDs). From a sample of 177 light curves using our
+										new I-band observations, we detect new photometric variability in 22 young M
+										dwarfs including 6 BDs, which are bonafide members in IC 348 and well
+										characterized in the spectral type of M dwarfs. </p>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-4 d-flex ftco-animate">
+							<div class="blog-entry justify-content-end">
+								<a href="https://iopscience.iop.org/article/10.3847/1538-3881/ab737a/meta"
+									class="block-20 zoom-effect" style="background-image: url('images/proj13.jpg');">
+								</a>
+								<div class="text mt-3 float-right d-block">
+
+									<h3 class="heading"><a
+											href="https://iopscience.iop.org/article/10.3847/1538-3881/ab737a/meta">Census
+											of the Young Stellar Population in the Galactic H II Region Sh2-242;</a>
+									</h3>
+									<p>We present here identification and characterization of the young stellar
+										population
+										associated with an active star-forming site Sh2-242. We used our own new optical
+										imaging
+										and spectroscopic observational data, as well as several archival catalogs, eg,
+										Pan-
+										STARRS 1, Gaia DR2, IPHAS, Wide-field InfraRed Camera, 2MASS, and Spitzer. </p>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-4 d-flex ftco-animate">
+							<div class="blog-entry justify-content-end">
+								<a href="https://academic.oup.com/mnras/article/499/1/618/5909615"
+									class="block-20 zoom-effect" style="background-image: url('images/proj14.jpg');">
+								</a>
+								<div class="text mt-3 float-right d-block">
+
+									<h3 class="heading"><a
+											href="https://academic.oup.com/mnras/article/499/1/618/5909615">Variable
+											stars in the field of intermediate-age open cluster NGC 559</a></h3>
+									<p>This work presents the first long-term photometric variability survey of the
+										intermediate-age
+										open cluster NGC 559. Time series V-band photometric observations on 40 nights
+										taken
+										over more than 3 yr with three different telescopes are analysed to search for
+										variable stars
+										in the cluster. We investigate the data for the periodicity analysis and reveal
+										70 variable stars
+										including 67 periodic variables in the target field, all of them are newly
+										discovered </p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+	</section>
+
+	<section class="ftco-section ftco-no-pt ftco-no-pb ftco-counter img" id="section-counter">
+		<div class="container">
+			<div class="row d-md-flex align-items-center">
+				<div class="col-md d-flex justify-content-center counter-wrap ftco-animate">
+					<div class="block-18">
+						<div class="text">
+							<strong class="number" data-number="108">0</strong>
+							<span>Publications</span>
+						</div>
+					</div>
+				</div>
+				<div class="col-md d-flex justify-content-center counter-wrap ftco-animate">
+					<div class="block-18">
+						<div class="text">
+							<strong class="number" data-number="34">0</strong>
+							<span>Papers</span>
+						</div>
+					</div>
+				</div>
+				<div class="col-md d-flex justify-content-center counter-wrap ftco-animate">
+					<div class="block-18">
+						<div class="text">
+							<strong class="number" data-number="29">0</strong>
+							<span>Mentored Students</span>
+						</div>
+					</div>
+				</div>
+				<div class="col-md d-flex justify-content-center counter-wrap ftco-animate">
+					<div class="block-18">
+						<div class="text">
+							<strong class="number" data-number="1668">0</strong>
+							<span>citations</span>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="ftco-section ftco-hireme img margin-top" style="background-image: url(images/bg_1.jpg)">
+			<!-- <div class="container"> -->
+			<div class="row justify-content-center">
+				<div class="col-md-7 ftco-animate text-center">
+					<h2>More publications and papers on<span> Scholar </span> </h2>
+					<div class="heading">
+						<h4>Guiding the stars of tomorrow through groundbreaking astronomical research and international
+							collaboration </h4>
+						<br>
+						<p><a href="https://scholar.google.ru/citations?user=-mFAISoAAAAJ&hl=en"
+								class="btn btn-primary py-3 px-5">Scholar</a></p>
+					</div>
+				</div>
+			</div>
+			<!-- </div> -->
+		</div>
+	</section>
+
+
+
+	<section class="ftco-section contact-section ftco-no-pb" id="contact-section">
+		<div class="container">
+			<div class="row justify-content-center mb-5 pb-3">
+				<div class="col-md-7 heading-section text-center ftco-animate">
+					<h1 class="big big-2">Contact</h1>
+					<h2 class="mb-4">Contact Me</h2>
+					<p>Below are the details to reach out to me!</p>
+				</div>
+			</div>
+
+			<div class="row d-flex contact-info mb-5">
+				<div class="col-md-6 col-lg-3 d-flex ftco-animate">
+					<div class="align-self-stretch box p-4 text-center">
+						<div class="icon d-flex align-items-center justify-content-center">
+							<span class="icon-map-signs"></span>
+						</div>
+						<h3 class="mb-4">Address</h3>
+						<p> Nainital, India</p>
+					</div>
+				</div>
+				<div class="col-md-6 col-lg-3 d-flex ftco-animate">
+					<div class="align-self-stretch box p-4 text-center">
+						<div class="icon d-flex align-items-center justify-content-center">
+							<span class="icon-phone2"></span>
+						</div>
+						<h3 class="mb-4">Contact Number</h3>
+						<p><a href="tel://789558000">: +91-5942-217751 (Office), +917895580004 (Mob.)</a></p>
+					</div>
+				</div>
+				<div class="col-md-6 col-lg-3 d-flex ftco-animate">
+					<div class="align-self-stretch box p-4 text-center">
+						<div class="icon d-flex align-items-center justify-content-center">
+							<span class="icon-paper-plane"></span>
+						</div>
+						<h3 class="mb-4">Email Address</h3>
+						<p><a href="mailto: sjoshiaries@gmail.com">sjoshiaries@gmail.com</a></p>
+					</div>
+				</div>
+				<div class="col-md-6 col-lg-3 d-flex ftco-animate">
+					<div class="align-self-stretch box p-4 text-center">
+						<div class="icon d-flex align-items-center justify-content-center">
+							<span class="icon-globe"></span>
+						</div>
+						<h3 class="mb-4">Download CV</h3>
+						<p><a
+								href="https://doc-04-4o-apps-viewer.googleusercontent.com/viewer/secure/pdf/mt6n9pabarc12e91m1bhn3firmvvhubi/1ca4rig5k9fgcgnhofraqo9ecm3pu9el/1722532725000/gmail/15555444626989777028/ACFrOgBVXKrld6kPYQJeUQQOrBjSEJ7U-6JQ9QybbOwPf4rMt-dxiu2hf-2ErDeeoddt8yCwG4VF4dG3T1ga-NDzNBU0CcPWL4uquhhUdZliirijwpktWU7wX2JAOo7VLmgH_RhamKhtYa8zxtI9?print=true&nonce=m6kkj2p6vd6js&user=15555444626989777028&hash=c7181j0th2f2rp2cf0cmtvm4s06oqaon">CLICK</a>
+						</p>
+					</div>
+				</div>
+
+				<div class="container">
+					<br>
+					<br>
+					<div class="row justify-content-center">
+						<div class="col-md-7 ftco-animate text-center">
+							<h2>Have a<span> Question? </span> <a href="mailto: sjoshiaries@gmail.com"
+									class="btn btn-primary py-3 px-5">Click Here</a> </h2>
+						</div>
+					</div>
+					<br>
+					<ul class="ftco-footer-social list-unstyled d-flex justify-content-center align-items-center mb-0">
+						<li class="ftco-animate normal-txt">Find me on </li>
+						<li class="ftco-animate"><a href="https://www.youtube.com/l"><span
+									class="icon-youtube"></span></a></li>
+						<li class="ftco-animate"><a href="https://www.linkedin.com/"><span
+									class="icon-linkedin"></span></a></li>
+						<li class="ftco-animate"><a href="https://twitter.com/"><span class="icon-twitter"></span></a>
+						</li>
+						<li class="ftco-animate"><a href="https://twitter.com/"><span class="icon-facebook"></span></a>
+						</li>
+						<li class="ftco-animate"><a href="https://www.instagram.com/"><span
+									class="icon-instagram"></span></a></li>
+					</ul>
+					<br>
+				</div>
+			</div>
+	</section>
+
+
+
+
+	<footer class="ftco-footer ftco-section">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12 text-center">
+
+					<p>
+						Copyright &copy;
+						<script>document.write(new Date().getFullYear());</script> All rights reserved
+
+				</div>
+			</div>
+		</div>
+	</footer>
+
+
+	<!-- loader -->
+	<div id="ftco-loader" class="show fullscreen"><svg class="circular" width="48px" height="48px">
+			<circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke="#eeeeee" />
+			<circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10"
+				stroke="#F96D00" />
+		</svg></div>
+
+
+	<script src="js/jquery.min.js"></script>
+	<script src="js/jquery-migrate-3.0.1.min.js"></script>
+	<script src="js/popper.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script src="js/jquery.easing.1.3.js"></script>
+	<script src="js/jquery.waypoints.min.js"></script>
+	<script src="js/jquery.stellar.min.js"></script>
+	<script src="js/owl.carousel.min.js"></script>
+	<script src="js/jquery.magnific-popup.min.js"></script>
+	<script src="js/aos.js"></script>
+	<script src="js/jquery.animateNumber.min.js"></script>
+	<script src="js/scrollax.min.js"></script>
+
+	<script src="js/main.js"></script>
+
+</body>
+
+</html>
